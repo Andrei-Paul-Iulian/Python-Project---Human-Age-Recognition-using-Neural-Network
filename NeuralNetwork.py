@@ -68,6 +68,22 @@ def backward_prop(Z1, A1, Z2, A2, W1, W2, X, Y):
 def incepe(X_train, Y_train, alfa, iteration):
     W1, b1, W2, b2 = init_params()
 
+    #W1 = pd.read_excel(r'W1.xlsx')
+    #W1 = np.array(W1)
+    #W1 = W1.T
+
+    #W2 = pd.read_excel(r'W2.xlsx')
+    #W2 = np.array(W2)
+    #W2 = W2.T
+
+    #b1 = pd.read_excel(r'b1.xlsx')
+    #b1 = np.array(b1)
+    #b1 = b1.T
+
+    #b2 = pd.read_excel(r'b2.xlsx')
+    #b2 = np.array(b2)
+    #b2 = b2.T
+
     cst = 10
     while cst:
         amestec = np.random.permutation(X_train[1,:].size)
